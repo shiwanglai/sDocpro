@@ -12,7 +12,10 @@ change directory
 
 ls
 ---
-list files and directories
+list files and directories   
+for example:   
+ls -lSrh   
+
 
 Looking Around
 ===
@@ -38,7 +41,14 @@ df
 
 du
 ===
-du   
+disk usage   
+-s, --summarize       display only a total for each argument   
+-h, --human-readable  print sizes in human readable format   
+-d, --max-depth=N     print the total for a directory only if it is N or fewer levels below the command line argument   
+for examply:   
+du -sh   
+du -h -d 1  
+
 
 find
 ===
@@ -81,4 +91,9 @@ tar -xf archive.tar
 (4)-v  
 --verbose   
 verbosely list files processed   
+
+
+rm
+===
+rm -rf [r-t]*   
 
