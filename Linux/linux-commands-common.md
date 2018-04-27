@@ -13,8 +13,13 @@ change directory
 ls
 ---
 list files and directories   
+-l                         use a long listing format   
+-h, --human-readable  print sizes in human readable format   
+-S                         sort by file size   
+-r, --reverse              reverse order while sorting   
 for example:   
-ls -lSrh   
+ls -lSr   
+ls -lSh   
 
 
 Looking Around
@@ -45,9 +50,11 @@ disk usage
 -s, --summarize       display only a total for each argument   
 -h, --human-readable  print sizes in human readable format   
 -d, --max-depth=N     print the total for a directory only if it is N or fewer levels below the command line argument   
-for examply:   
-du -sh   
-du -h -d 1  
+for example:    
+计算当前目录下文件目录总大小：    
+du -sh    
+计算当前目录下各子目录大小：    
+du -h -d 1   
 
 
 find
@@ -95,5 +102,16 @@ verbosely list files processed
 
 rm
 ===
-rm -rf [r-t]*   
+删除以r-t开头在文件或目录：   
+rm -rf [r-t]*   
+
+sort
+===
+-h    
+-r    reverse the result of comparisons   
+for example:    
+反向排序，可与du一起使用    
+du -h -d1 | sort -hr   
+
+
 
