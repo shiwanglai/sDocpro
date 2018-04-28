@@ -63,7 +63,21 @@ find
 
 grep
 ===
-grep   
+Global search Regular Expression and Print   
+-n, --line-number         print line number with output lines   
+-r, --recursive           equivalent to --directories=recurse.   
+-s, --no-messages         suppress error messages   
+-w, --word-regexp         force PATTERN to match only whole words   
+-i, --ignore-case         ignore case distinctions   
+--exclude-dir=DIR         排除DIR目录   
+-B, --before-context=NUM  print NUM lines of leading context   
+-A, --after-context=NUM   print NUM lines of trailing context   
+-C, --context[=NUM]       print NUM (default 2) lines of output context    
+
+Example:    
+当前目录下搜索sth，打印行数、循环搜索、不显示错误、完全匹配。    
+grep sth . -nrsw   
+
 
 ln
 ===
