@@ -1,42 +1,44 @@
-linuxcommand.org
+基本按使用频度排序。    
+分类参考：    
+linuxcommand.org    
 
-Navigation
+ls
 ===
-pwd
+list files and directories   
+-l                         use a long listing format   
+-S                         sort by file size   
+-t                         sort by time   
+-r, --reverse              reverse order while sorting   
+-h, --human-readable  print sizes in human readable format   
+
+Examples   
 ---
+ls -lSr   
+ls -lSh   
+ls -lt
+
+
+pwd
+===
 print working directory   
 
 cd
----
+===
 change directory
 
-ls
----
-list files and directories   
--l                         use a long listing format   
--h, --human-readable  print sizes in human readable format   
--S                         sort by file size   
--r, --reverse              reverse order while sorting   
-for example:   
-ls -lSr   
-ls -lSh   
-
-
-Looking Around
-===
 less
----
+===
 view text files
 
 file
----
+===
 classify a file's contents
 
 
 
 
 cat
----
+===
 cat -v
 
 
@@ -50,7 +52,9 @@ disk usage
 -s, --summarize       display only a total for each argument   
 -h, --human-readable  print sizes in human readable format   
 -d, --max-depth=N     print the total for a directory only if it is N or fewer levels below the command line argument   
-for example:    
+
+Examples    
+---
 计算当前目录下文件目录总大小：    
 du -sh    
 计算当前目录下各子目录大小：    
@@ -74,7 +78,8 @@ Global search Regular Expression and Print
 -A, --after-context=NUM   print NUM lines of trailing context   
 -C, --context[=NUM]       print NUM (default 2) lines of output context    
 
-Example:    
+Examples    
+---
 当前目录下搜索sth，打印行数、循环搜索、不显示错误、完全匹配。    
 grep sth . -nrsw   
 
@@ -123,7 +128,9 @@ sort
 ===
 -h    
 -r    reverse the result of comparisons   
-for example:    
+
+Examples    
+---
 反向排序，可与du一起使用    
 du -h -d1 | sort -hr   
 
