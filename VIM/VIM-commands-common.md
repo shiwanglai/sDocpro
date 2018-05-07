@@ -19,6 +19,19 @@ Normal mode
 ===
 where you can run commands. This is the default mode in which Vim starts up    
 
+substitute
+---
+:%s/from/to/gc    
+options:    
+% - range，全文件替换，a,b表示范围从a行到b行    
+g - global line，一整行都替换，否则每行首个from替换为to    
+c - comfirm，每一处替换提示confirmation message    
+
+Examples    
+删除行位空格    
+:%s/\s\$+//     
+
+
 Insert mode
 ===
 where you insert i.e. write the text    
