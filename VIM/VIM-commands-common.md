@@ -37,7 +37,7 @@ macro
 qa 'action' q    
 使用宏    
 @a    
-查看宏，^\[表示escape键    
+查看宏，'^\['表示escape键    
 :reg a    
 
 Insert mode
