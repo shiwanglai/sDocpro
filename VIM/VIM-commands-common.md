@@ -31,6 +31,12 @@ Examples
 删除行位空格    
 :%s/\s\$+//     
 
+macro
+---
+录制宏，可使用25个字母，以字母q开始和结束录制    
+qa 'action' q    
+使用宏    
+@a   
 
 Insert mode
 ===
