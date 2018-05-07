@@ -13,9 +13,9 @@ list files and directories
 
 Examples   
 ---
-ls -lSr   
-ls -lSh   
-ls -lt
+ls -lt，按时间排序    
+ls -lSh，按size排序、易读的数字显示    
+ls -lSr，按size反向排序    
 
 
 pwd
