@@ -28,7 +28,7 @@ g - global line，一整行都替换，否则每行首个from替换为to
 c - comfirm，每一处替换提示confirmation message    
 
 Examples    
-删除行位空格    
+删除行尾空格    
 :%s/\s\$+//     
 
 macro
@@ -45,4 +45,13 @@ where you insert i.e. write the text
 Visual mode
 ===
 where you visually select a bunch of text so that you can run a command/operation only on that part of the text    
+
+选择方式
+---
+按字符    
+v    
+按行数    
+V    
+任意字符block    
+Ctrl-v    
 
