@@ -29,7 +29,7 @@ c - comfirm，每一处替换提示confirmation message
 
 Examples    
 删除行尾空格    
-:%s/\s\$+//     
+:%s/\s\+$//     
 
 macro
 ---
