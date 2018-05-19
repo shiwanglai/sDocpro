@@ -90,11 +90,25 @@ ln
 
 mount
 ===
+mount a filesystem   
+
+mount -t type device dir    
+mount    
+
+Examples
+---
+挂载debugfs到/sys/kernel/debug目录    
+mount -t debugfs debugfs /sys/kernel/debug    
+list mounted filesystems    
 mount   
 
-unmount
+umount
 ===
-unmount   
+umount dir
+
+Examples
+---
+umount /sys/kernel/debug    
 
 tar
 ===
