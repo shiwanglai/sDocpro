@@ -4,6 +4,16 @@ Built-in Types
 https://docs.python.org/3/library/stdtypes.html#    
 常用的有str、list，都是class。    
 
+Sequence Types : list, tuple, range
+---
+常规操作   
+s + t   
+x in s   
+s[i]，第i个，base on 0   
+s[i:j]，第i到j-1个   
+s[i:j:k]，第i到j-1个，step k   
+
+
 Text Sequence Type : str
 ---
 str.find(sub)   
