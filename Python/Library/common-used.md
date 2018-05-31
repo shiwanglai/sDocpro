@@ -1,5 +1,6 @@
-
+***
 # Built-in Types
+***
 https://docs.python.org/3/library/stdtypes.html#    
 常用的有str、list，都是class。    
 
@@ -42,6 +43,7 @@ sep为分隔符或字符串，例如" "或","
 
 ***
 # Text Processing Services
+***
 re   
 
 re : Regular expression operations
@@ -51,6 +53,10 @@ https://docs.python.org/3/library/re.html
 常用正则
 ---
 /d：一个数字   
+/D：一个非数字   
+[a-zA-Z] ：一个字符   
+/s：一个空白字符   
+/S：一个非空白字符   
 
 findall
 ---
