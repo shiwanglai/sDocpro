@@ -1,18 +1,20 @@
 
-Built-in Types
-===
+# Built-in Types
 https://docs.python.org/3/library/stdtypes.html#    
 常用的有str、list，都是class。    
 
 Sequence Types : list, tuple, range
+===
+常规操作
 ---
-常规操作   
 s + t   
 x in s   
 s[i]，第i个，base on 0   
 s[i:j]，第i到j-1个   
 s[i:j:k]，第i到j-1个，step k   
 
+赋值
+---
 赋值参考 Mutable Sequence Types 章节    
 例如：   
 lst[i]=x   
@@ -21,6 +23,8 @@ lst.insert(i, x)
 lst.remove(x)   
 
 Text Sequence Type : str
+===
+find
 ---
 str.find(sub)   
 sub为子字符串   
@@ -28,22 +32,28 @@ sub为子字符串
 Return -1 if sub is not found   
 find是否存在时，可以使用sub in str替代。   
 
+split
+---
 str.split(sep)   
 sep为分隔符或字符串，例如" "或","    
 返回值为a list of the words seperated，类型为class list    
 
 
-Text Processing Services
-===
+
+***
+# Text Processing Services
 re   
 
-re — Regular expression operations
----
+re : Regular expression operations
+===
 https://docs.python.org/3/library/re.html    
 
-常用正则   
+常用正则
+---
 /d：一个数字   
 
+findall
+---
 re.findall(pattern, string, flags=0)    
 例如   
 lstr=re.findall(r"\d\d", string)   
