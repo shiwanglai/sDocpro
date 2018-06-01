@@ -65,4 +65,60 @@ re.findall(pattern, string, flags=0)
 lstr=re.findall(r"\d\d", string)   
 输出list，首个匹配为lstr[0]    
 
+***
+# Generic Operating System Services
+***
+File (io : Core tools for working with streams)
+===
+https://docs.python.org/3/library/io.html    
+
+open
+---
+open(file, mode)   
+
+return   
+'r' return a class 'str', TextIOBase   
+'rb' return class 'bytes'   
+故操作对象是str或bytes。    
+TextIOBase is base on IOBase.   
+
+mode   
+'r': reading,default   
+'w': writing   
+'a': appending   
+'b': binary mode   
+'t': text mode,default   
+
+close
+---
+file.close()   
+
+read
+---
+read(size=-1)    
+
+return   
+Read up to size bytes from the object    
+默认返回所有读取的内容。   
+
+
+write
+---
+
+seek
+---
+
+tell
+---
+file.tell()   
+Return the current stream position.   
+注意是码流形式，非Text形式。   
+
+readline
+---
+
+writeline
+---
+
+
 
