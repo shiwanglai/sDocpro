@@ -97,9 +97,13 @@ read
 ---
 read(size=-1)    
 
-return   
-Read up to size bytes from the object    
-默认返回所有读取的内容。   
+返回值：   
+class bytes:    
+Return at most size bytes    
+class str:    
+return at most size characters    
+回车换行算一个字符。    
+默认返回所有文件内容。   
 
 
 write
