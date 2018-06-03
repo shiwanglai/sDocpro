@@ -107,15 +107,36 @@ read
 read(size=-1)    
 
 返回值：   
-class bytes:    
-Return at most size bytes    
-class str:    
-return at most size characters    
+return a class bytes containing at most size bytes    
+or   
+return a class str containing at most size characters    
 回车换行算一个字符。    
 默认返回所有文件内容。   
 
+例如：   
+file.read()，读取全部    
+file.read(10)，读取10个    
+
+readline
+---
+readline(size=-1)    
+
+返回值：   
+return a class bytes containing at most size bytes until newline or EOF    
+(just from IOBase)   
+or    
+return a class str containing at most size characters until newline or EOF    
+
+例如：   
+file.readline()，读一行    
 
 write
+---
+
+writeline
+---
+
+writelines
 ---
 
 seek
@@ -127,11 +148,6 @@ file.tell()
 Return the current stream position.   
 注意是码流形式，非Text形式。   
 
-readline
----
-
-writeline
----
 
 
 
