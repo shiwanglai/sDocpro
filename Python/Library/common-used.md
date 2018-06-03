@@ -77,17 +77,26 @@ open
 open(file, mode)   
 
 return   
-'r' return a class 'str', TextIOBase   
-'rb' return class 'bytes'   
-故操作对象是str或bytes。    
-TextIOBase is base on IOBase.   
+'r' return a class '_io.TextIOWrapper'   
+so does 'w'   
+IOBase   
+--TextIOBase   
+----TextIOWrapper   
+
+'rb' return a class '_io.BufferedReader'   
+IOBase   
+--BufferedIOBase   
+----BufferedReader *rb   
+----BufferedWriter *wb   
+------BufferedRandom *wb+   
 
 mode   
 'r': reading,default   
 'w': writing   
 'a': appending   
+'+': reading and writing, used with r w or a   
 'b': binary mode   
-'t': text mode,default   
+'t': text mode, default   
 
 close
 ---
