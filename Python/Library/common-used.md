@@ -132,6 +132,16 @@ file.readline()，读一行
 
 write
 ---
+write(bs)   
+
+Write the str to the stream and return the number of characters written   
+or   
+Write the bytes to the stream and return the number of bytes written   
+
+例如：   
+file.write("hello")   
+or   
+file.write(b"hello")    
 
 writeline
 ---
