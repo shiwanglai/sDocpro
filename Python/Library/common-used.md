@@ -150,6 +150,7 @@ file.write(b"hello")
 
 writeline
 ---
+not support for both text and binary mode    
 
 writelines
 ---
