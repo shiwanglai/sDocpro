@@ -112,7 +112,8 @@ return a class bytes containing at most size bytes
 or   
 return a class str containing at most size characters    
 (from TextIOBase)   
-回车换行算一个字符。    
+Text mode时回车换行(\r\n)算一个字符。    
+
 默认返回所有文件内容。   
 
 例如：   
@@ -154,15 +155,37 @@ not support for both text and binary mode
 
 writelines
 ---
+writelines(lines)   
+
+Write a list of lines to the stream   
+from IOBase   
+
+例如：   
+file.writelines(["hello"])   
+or   
+file.writelines([b"hellob"])   
+
 
 seek
 ---
+seek(offset[, whence])   
+
+Change the stream position to the given byte offset.   
+
+Values for whence are:   
+SEEK_SET or 0 – start of the stream (default); zero or positive   
+SEEK_CUR or 1 – current stream position; offset may be negative   
+SEEK_END or 2 – end of the stream; offset is usually negative   
+
+Return the new absolute position, same to tell().   
+
 
 tell
 ---
-file.tell()   
+tell()   
+
 Return the current stream position.   
-注意是码流形式，非Text形式。   
+注意是binary形式，非Text形式。   
 
 
 
