@@ -108,8 +108,10 @@ read(size=-1)
 
 返回值：   
 return a class bytes containing at most size bytes    
+(from BufferedReader)   
 or   
 return a class str containing at most size characters    
+(from TextIOBase)   
 回车换行算一个字符。    
 默认返回所有文件内容。   
 
@@ -126,6 +128,7 @@ return a class bytes containing at most size bytes until newline or EOF
 (just from IOBase)   
 or    
 return a class str containing at most size characters until newline or EOF    
+(from TextIOBase)   
 
 例如：   
 file.readline()，读一行    
@@ -135,8 +138,10 @@ write
 write(bs)   
 
 Write the str to the stream and return the number of characters written   
+(from BufferedWriter)   
 or   
 Write the bytes to the stream and return the number of bytes written   
+(from TextIOBase)   
 
 例如：   
 file.write("hello")   
