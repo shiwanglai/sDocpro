@@ -98,6 +98,12 @@ mode
 'b': binary mode   
 't': text mode, default   
 
+例如：   
+file=open("hi.txt", "r")，只读   
+file=open("hi.txt", "w+")，读写，写时覆盖   
+file=open("hi.txt", "a+")，读写，写时追加   
+都可加入"b"    
+
 close
 ---
 file.close()   
