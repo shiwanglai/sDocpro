@@ -13,11 +13,11 @@ if expression : suite
 if x < y : print(x)   
 
 if x < y :   
-    print("less")   
+　　print("less")   
 elif x == y :    
-    print("equal")   
+　　print("equal")   
 else:   
-    print("more")   
+　　print("more")   
 
 while
 ===
@@ -28,8 +28,8 @@ while expression : suite
 while i < 10 : print(i); i = i + 1    
 输出同：    
 while i < 10 :   
-    print(i)   
-    i = i + 1   
+　　print(i)   
+　　i = i + 1   
 
 for
 ===
@@ -40,14 +40,14 @@ for target_list in expression_list : suite
 for i in range(10) : print(i)    
 输出同：    
 for i in range(10) :    
-    print(i)    
+　　print(i)    
 
 Function definitions
 ===
 def funcname ([parameter_list]) : suite   
 
 def func():   
-    pass   
+　　pass   
 
 
 Class definitions
@@ -56,16 +56,16 @@ class classname [inheritance] : suite
 
 例如：   
 class foo:   
-    def \_\_init\_\_(self, hour=12):   
-        self.hour = hour   
-    def hello(self):   
-        print("hello")   
+　　def \_\_init\_\_(self, hour=12):   
+　　　　self.hour = hour   
+　　def hello(self):   
+　　　　print("hello")   
 
 class bar(foo):   
-    def \_\_init\_\_(self, year=2018, hour=12):   
-        foo.__init__(self, hour)   
-        self.year = year   
-    def hi(self):   
-        print("hi")   
+　　def \_\_init\_\_(self, year=2018, hour=12):   
+　　　　foo.__init__(self, hour)   
+　　　　self.year = year   
+　　def hi(self):   
+　　　　print("hi")   
 
 
