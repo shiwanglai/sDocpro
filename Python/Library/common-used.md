@@ -44,11 +44,13 @@ sep为分隔符或字符串，例如" "或","
 ***
 # 6 Text Processing Services
 ***
-re   
-
 re : Regular expression operations
 ===
 https://docs.python.org/3/library/re.html    
+
+import
+---
+import re   
 
 常用正则
 ---
@@ -197,6 +199,10 @@ Return the current stream position.
 time : Time access and conversions
 ===
 https://docs.python.org/3/library/time.html   
+
+import
+---
+import time   
 
 sleep
 ---
