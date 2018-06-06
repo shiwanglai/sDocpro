@@ -30,10 +30,9 @@ __line__
 \_\_line\_\_   
 
 space   
->space   
->>space   
->>>>space   
-
+　　　　space   
+　　space   
+　space   
 s p a c e   
 
 
