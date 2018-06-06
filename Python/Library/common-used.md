@@ -204,6 +204,18 @@ import
 ---
 import time   
 
+time
+---
+time.time()   
+
+Return the time in seconds since the epoch as a floating point number.   
+
+例如：   
+time_start=time.time()   
+do something   
+time_end=time.time()   
+print("totally cost %f seconds" % (time_end-time_start))   
+
 sleep
 ---
 time.sleep(secs)   
