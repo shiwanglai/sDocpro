@@ -30,6 +30,7 @@ __line__
 \_\_line\_\_   
 
 space   
+使用全角空格   
 　　　　space   
 　　space   
 　space   
