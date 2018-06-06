@@ -1,5 +1,5 @@
 ***
-# Built-in Types
+# 4 Built-in Types
 ***
 https://docs.python.org/3/library/stdtypes.html#    
 常用的有str、list，都是class。    
@@ -42,7 +42,7 @@ sep为分隔符或字符串，例如" "或","
 
 
 ***
-# Text Processing Services
+# 6 Text Processing Services
 ***
 re   
 
@@ -66,7 +66,7 @@ lstr=re.findall(r"\d\d", string)
 输出list，首个匹配为lstr[0]    
 
 ***
-# Generic Operating System Services
+# 16 Generic Operating System Services
 ***
 File (io : Core tools for working with streams)
 ===
@@ -192,6 +192,18 @@ tell()
 
 Return the current stream position.   
 注意是binary形式，非Text形式。   
+
+
+time : Time access and conversions
+===
+https://docs.python.org/3/library/time.html   
+
+sleep
+---
+time.sleep(secs)   
+
+例如：   
+time.sleep(3)，睡眠3秒   
 
 
 
