@@ -212,5 +212,20 @@ time.sleep(secs)
 time.sleep(3)，睡眠3秒   
 
 
+***
+# 17 Concurrent Execution
+***
+subprocess : Subprocess management
+===
+https://docs.python.org/3/library/subprocess.html   
+
+import
+---
+import subprocess
+
+Popen
+---
+
+
 
 
