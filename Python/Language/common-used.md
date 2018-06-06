@@ -1,5 +1,5 @@
 ***
-# Compound statements
+# 8 Compound statements
 ***
 https://docs.python.org/3/reference/compound_stmts.html    
 
@@ -41,4 +41,31 @@ for i in range(10) : print(i)
 输出同：    
 for i in range(10) :    
     print(i)    
+
+Function definitions
+===
+def funcname ([parameter_list]) : suite   
+
+def func():   
+    pass   
+
+
+Class definitions
+===
+class classname [inheritance] : suite   
+
+例如：   
+class foo:   
+    def \_\_init\_\_(self, hour=12):   
+        self.hour = hour   
+    def hello(self):   
+        print("hello")   
+
+class bar(foo):   
+    def \_\_init\_\_(self, year=2018, hour=12):   
+        foo.__init__(self, hour)   
+        self.year = year   
+    def hi(self):   
+        print("hi")   
+
 
