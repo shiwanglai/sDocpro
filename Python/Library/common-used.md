@@ -210,7 +210,7 @@ time.time()
 
 Return the time in seconds since the epoch as a floating point number.   
 
-例如：   
+例如，计算耗时秒数：   
 time_start=time.time()   
 do something   
 time_end=time.time()   
@@ -233,10 +233,28 @@ https://docs.python.org/3/library/subprocess.html
 
 import
 ---
-import subprocess
+import subprocess   
 
-Popen
+subprocess.Popen
 ---
+subprocess.Popen(args, stdin=None, stdout=None, stderr=None, shell=False)   
+Execute a child program in a new process.   
+
+Popen.communicate
+---
+Popen.communicate(input=None, timeout=None)   
+Interact with process: Send data to stdin. Read data from stdout and stderr, until end-of-file is reached.   
+
+Popen.returncode
+---
+The child return code, set by poll() and wait() (and indirectly by communicate()).   
+
+例如：   
+adb_proc = subprocess.Popen(cmd_list, stdin = subprocess.PIPE, \   
+　　　　stdout = subprocess.PIPE, \  
+　　　　stderr = subprocess.PIPE, shell = False)   
+(out_data, err_data) = adb_proc.communicate()   
+ret = adb_proc.returncode   
 
 
 
