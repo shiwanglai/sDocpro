@@ -16,6 +16,8 @@ Examples
 ls -lt，按时间排序    
 ls -lSh，按size排序、易读的数字显示    
 ls -lSr，按size反向排序    
+ls -l -d */  ，只显示目录    
+ls -l | grep "^-"，只显示文件    
 
 
 pwd
