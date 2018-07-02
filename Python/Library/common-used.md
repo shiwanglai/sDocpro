@@ -77,6 +77,30 @@ an empty list if find nothing.
 lstr=re.findall(r"\d\d", string)   
 输出list，首个匹配为lstr[0]    
 
+match
+---
+re.match(pattern, string, flags=0)    
+match at the beginning of the string   
+
+return   
+a match object.   
+None if match nothing.   
+
+search
+---
+re.search(pattern, string, flags=0)    
+looking for the first location where the pattern matches   
+
+return   
+a match object.   
+None if match nothing.   
+
+差异：   
+findall返回list，搜索所有匹配。   
+match返回match obj，pattern从头开始计算，即^pattern。   
+search返回match obj，搜索第一个匹配。   
+
+
 ***
 # 16 Generic Operating System Services
 ***
