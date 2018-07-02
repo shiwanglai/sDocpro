@@ -25,6 +25,11 @@ lst.remove(x)
 
 Text Sequence Type : str
 ===
+常规操作
+---
+s + t   
+x in s   
+
 find
 ---
 str.find(sub)   
@@ -63,6 +68,11 @@ import re
 findall
 ---
 re.findall(pattern, string, flags=0)    
+
+return   
+a list of strings.   
+an empty list if find nothing.   
+
 例如   
 lstr=re.findall(r"\d\d", string)   
 输出list，首个匹配为lstr[0]    
