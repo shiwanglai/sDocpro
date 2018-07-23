@@ -113,6 +113,10 @@ git log --oneline
 （6）-p or --patch  
 显示当前分支的提交信息，以patch方式显示，含文件内容差异。  
 git log -p  
+（7）--pretty   
+--pretty=fuller   
+显示commit更全信息，含commit time。  
+git log --pretty=fuller   
 
 
 git show
