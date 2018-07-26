@@ -82,9 +82,10 @@ Global search Regular Expression and Print
 
 Examples    
 ---
-当前目录下搜索sth，打印行数、循环搜索、不显示错误、完全匹配。    
+1 当前目录下搜索sth，打印行数、循环搜索、不显示错误、完全匹配。    
 grep sth . -nrsw   
-
+2 在.h文件中搜索thread   
+find . -name "*.h" | xargs grep "thread" --color
 
 ln
 ===
