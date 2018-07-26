@@ -47,11 +47,28 @@ for name [ [in [words ...] ] ; ] do commands; done
 An alternate form of the for command is also supported:   
 for (( expr1 ; expr2 ; expr3 )) ; do commands ; done   
 
+sample
+---
+1   
 list="rootfs usr data data2"  
 for i in $list;  
 do  
 echo $i is appoint;   
-done
+done   
+
+2   
+for i in {1..9}   
+do   
+    echo $i   
+done   
+
+3   
+for ((i=0; i<3; i++)); do   
+{   
+    echo $i   
+}   
+done   
+
 
 while
 ===
@@ -60,5 +77,13 @@ while test-commands; do consequent-commands; done
 
 while   
 
+
+function
+===
+func()   
+{   
+    echo func $1    
+}    
+func aa    
 
 
