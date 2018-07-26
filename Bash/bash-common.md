@@ -9,8 +9,11 @@ the entire command line
 
 variable
 ===
-${variable_name}
+${variable_name}   
+变量赋值=前后不能有空格。   
 
+samples
+---
 skill="Java"   
 echo "I am good at ${skill}Script"
 
@@ -20,9 +23,17 @@ $@, all params
 $#, the number of params   
 $1, $2 .., the 1st, 2nd .. param   
 
-for example:   
+samples
+---
 ./bashtestp.sh aa bb   
 the number of params is 2.   
+
+comments
+===
+single line   
+\#   
+block   
+
 
 if
 ===
@@ -47,7 +58,7 @@ for name [ [in [words ...] ] ; ] do commands; done
 An alternate form of the for command is also supported:   
 for (( expr1 ; expr2 ; expr3 )) ; do commands ; done   
 
-sample
+samples
 ---
 1   
 list="rootfs usr data data2"  
