@@ -304,8 +304,10 @@ Iteration 0
 　　The result of 0*2 is 0   
 Iteration 1   
 
-break [n]
+Bourne Shell Builtins
 ===
+break [n]
+---
 跳出外部循环，n要跳出的循环等级。   
 n默认为1，表明跳出当前循环。   
 
@@ -313,6 +315,11 @@ Exit from a for, while, until, or select loop.
 If n is supplied, the nth enclosing loop is exited.   
 n must be greater than or equal to 1.   
 
+continue [n]
+---
+Resume the next iteration of an enclosing for, while, until, or select loop.   
+If n is supplied, the execution of the nth enclosing loop is resumed.   
+n must be greater than or equal to 1.   
 
 Multi-condition
 ===
