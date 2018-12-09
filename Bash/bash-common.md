@@ -197,13 +197,72 @@ test命令可以判断3类条件：
 
 ***
 
+an example
+===
+code
+---
+#!/bin/bash   
+   
+for file in \`find ~/share\`   
+do    
+    if [ -d "$file" ]   
+    then   
+        echo "$file is a direcotory"   
+    elif [ -f "$file" ]   
+    then   
+        echo "$file is a file"   
+    fi   
+done    
+
+input
+---
+./testfor.sh
+
+output
+---
+/home/roger/share is a direcotory   
+/home/roger/share/doc is a direcotory   
+/home/roger/share/doc/config is a file   
+/home/roger/share/txt_testif.txt is a file   
+/home/roger/share/testfor.sh is a file   
+/home/roger/share/t.txt is a file   
+
+Looping Constructs for
+===
+syntax in
+---
+for name [ [in [words ...] ] ; ] do commands; done
+
+syntax C style
+---
+An alternate form of the for command is also supported:
+for (( expr1 ; expr2 ; expr3 )) ; do commands ; done
+
+Conditional Expressions file
+===
+文件比较   
+
+-d file
+---
+True if file exists and is a directory.
+
+-e file
+---
+True if file exists.
+
+-f file
+---
+True if file exists and is a regular file.
+
+
+***
+
+
+
+
+
 for
 ===
-The syntax of the for command is:   
-for name [ [in [words ...] ] ; ] do commands; done   
-
-An alternate form of the for command is also supported:   
-for (( expr1 ; expr2 ; expr3 )) ; do commands ; done   
 
 samples
 ---
