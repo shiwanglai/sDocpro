@@ -257,22 +257,22 @@ True if file exists and is a regular file.
 
 ***
 
-an example for C
+an example for C style
 ===
 code
 ---
 #!/bin/bash   
 
 for ((i=0; i<6; i++)); do   
-    echo "Iteration $i"   
-    for ((j=0; j<3; j++)); do   
-        if [ $i -ge 1 ] && [ $i -le 3 ]; then   
-            break   
-        fi   
-        val=$[ $i * $j ]   
-        #val=${ $i * $j }   
-        echo "    The result of $i*$j is $val"   
-    done   
+　echo "Iteration $i"   
+　　for ((j=0; j<3; j++)); do   
+　　　　if [ $i -ge 1 ] && [ $i -le 3 ]; then   
+　　　　　　break   
+　　　　fi   
+　　　　val=$[ $i * $j ]   
+　　　　#val=${ $i * $j }   
+　　　　echo "    The result of $i*$j is $val"   
+　done   
 done   
 
 input
@@ -282,30 +282,36 @@ input
 output
 ---
 Iteration 0   
-    The result of 0*0 is 0   
-    The result of 0*1 is 0   
-    The result of 0*2 is 0   
+　　The result of 0*0 is 0   
+　　The result of 0*1 is 0   
+　　The result of 0*2 is 0   
 Iteration 1   
 Iteration 2   
 Iteration 3   
 Iteration 4   
-    The result of 4*0 is 0   
-    The result of 4*1 is 4   
-    The result of 4*2 is 8   
+　　The result of 4*0 is 0   
+　　The result of 4*1 is 4   
+　　The result of 4*2 is 8   
 Iteration 5   
-    The result of 5*0 is 0   
-    The result of 5*1 is 5    
-    The result of 5*2 is 10   
+　　The result of 5*0 is 0   
+　　The result of 5*1 is 5    
+　　The result of 5*2 is 10   
 
+if "break" changed to "break 2", the output changed.   
+Iteration 0   
+　　The result of 0*0 is 0   
+　　The result of 0*1 is 0   
+　　The result of 0*2 is 0   
+Iteration 1   
 
 break [n]
 ===
-跳出外部循环，n要跳出的循环等级。
-n默认为1，表明跳出当前循环。
+跳出外部循环，n要跳出的循环等级。   
+n默认为1，表明跳出当前循环。   
 
-Exit from a for, while, until, or select loop.
-If n is supplied, the nth enclosing loop is exited.
-n must be greater than or equal to 1.
+Exit from a for, while, until, or select loop.   
+If n is supplied, the nth enclosing loop is exited.   
+n must be greater than or equal to 1.   
 
 
 Multi-condition
@@ -324,10 +330,6 @@ The && and || operators do not evaluate expression2 if the value of expression1 
 ! expression
 ---
 True if expression is false.
-
-
-
-
 
 
 ***
