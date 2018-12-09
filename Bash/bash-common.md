@@ -3,6 +3,8 @@ gnu-doc reference
 ===
 http://www.gnu.org/software/bash/manual/
 
+***
+
 an example
 ===
 code
@@ -50,42 +52,106 @@ multi line: not support
 
 Special Parameters
 ===
-$n: the n param, n is 1 2 ..   
-$#: the number of positional parameters in decimal   
-$@: the positional parameters, starting from one   
-$*: same as $@, except to a single word when double quoted   
-$0: the name of the shell or shell script   
-$$: the process ID of the shell   
-$?: the exit status of the most recently executed foreground pipeline   
-${num}: positional parameters beyond $9 using ${num}   
+$n
+---
+the n param, n is 1 2 ..   
+
+$#
+---
+the number of positional parameters in decimal   
+
+$@
+---
+the positional parameters, starting from one   
+
+$*
+---
+same as $@, except to a single word when double quoted   
+
+$0
+---
+the name of the shell or shell script   
+
+$$
+---
+the process ID of the shell   
+
+$?
+---
+the exit status of the most recently executed foreground pipeline   
+
+${num}
+---
+positional parameters beyond $9 using ${num}   
 
 Conditional Expressions integer
 ===
 数值比较   
+
 arg1 OP arg2   
 Arg1 and arg2 may be positive or negative integers.   
 OP is one of the below.   
--eq: equal to   
--ne: not equal to   
--lt: less than   
--le: less than or equal to   
--gt: greater than   
--ge: greater than or equal to   
+
+-eq
+---
+equal to   
+
+-ne
+---
+not equal to   
+
+-lt
+---
+less than   
+
+-le
+---
+less than or equal to   
+
+-gt
+---
+greater than   
+
+-ge
+---
+greater than or equal to   
+
 These arithmetic binary operators return true if the condition satisfied.   
 
 Conditional Expressions string
 ===
 字符串比较   
--z string: True if the length of string is zero.   
--n string: True if the length of string is non-zero   
-string1 == string2: True if the strings are equal   
-string1 = string2: same to ==   
-string1 != string2: True if the strings are not equal   
-string1 > string2: True if string1 sorts after string2 lexicographically.   
-string1 < string2: True if string1 sorts before string2 lexicographically.   
+
+-z string
+---
+True if the length of string is zero.   
+
+-n string
+---
+True if the length of string is non-zero   
+
+string1 == string2
+---
+True if the strings are equal   
+
+string1 = string2
+---
+same to ==   
+
+string1 != string2
+---
+True if the strings are not equal   
+
+string1 > string2
+---
+True if string1 sorts after string2 lexicographically.   
+
+string1 < string2
+---
+True if string1 sorts before string2 lexicographically.   
 \>和<需进行转义，否则shell当作重定向符号，即\\>或\\<。   
 
-variables
+Variables
 ===
 变量赋值
 ---
@@ -129,7 +195,7 @@ test命令可以判断3类条件：
 除test使用的标准数学运算符，允许将高级数学表达式放入比较中。   
 表达式里的>不需要转义。   
 
-
+***
 
 for
 ===
