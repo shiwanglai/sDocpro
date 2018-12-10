@@ -341,6 +341,40 @@ True if expression is false.
 
 ***
 
+an example case
+===
+code
+---
+#!/bin/bash   
+
+pswd=""   
+for one in $@   
+do   
+    case $one in   
+        "a" | "A")   pswd+="1";;   
+        "b")   pswd+="2";;    
+        "c")   pswd+="3";;     
+        \*)   pswd+="*";;    
+    esac   
+done   
+
+echo passwd is $pswd   
+
+input
+---
+./testcase.sh a A b c d
+
+output
+---
+passwd is 1123*
+
+Conditional Constructs case
+===
+case word in [ [(] pattern [| pattern]…) command-list ;;]… esac
+
+
+***
+
 for
 ===
 
