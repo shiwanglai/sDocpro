@@ -5,6 +5,49 @@ http://www.gnu.org/software/bash/manual/
 
 ***
 
+an example parameter
+===
+code
+---
+t_full=~/dev/srcbase/kernelorg/mainline/linux/kernel/workqueue.c   
+t_path=${t_full%/\*}   
+echo t_path: $t_path   
+t_name=${t_full##\*/}   
+echo t_name: $t_name   
+t_name_noc=${t_name%.\*}   
+echo t_name_noc: $t_name_noc   
+echo full: ${t_path}"/"${t_name}   
+
+input
+---
+./testparam.sh
+
+output
+---
+t_path: /home/roger/dev/srcbase/kernelorg/mainline/linux/kernel   
+t_name: workqueue.c   
+t_name_noc: workqueue   
+full: /home/roger/dev/srcbase/kernelorg/mainline/linux/kernel/workqueue.c   
+
+Shell Parameter Expansion
+===
+${parameter#word} or ${parameter##word}
+---
+word is a pattern   
+if the pattern matches the beginning of the expanded value of parameter   
+the result of the expansion is the expanded value of parameter   
+with the shortest matching pattern (the ‘#’ case)   
+or the longest matching pattern (the ‘##’ case) deleted.   
+
+${parameter#word} or ${parameter##word}
+---
+word is a pattern   
+If the pattern matches If the pattern matches a trailing portion   
+the result of the expansion is the value of parameter   
+with the shortest matching pattern (the ‘%’ case)   
+or the longest matching pattern (the ‘%%’ case) deleted.   
+
+
 an example if
 ===
 code
