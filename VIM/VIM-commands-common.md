@@ -1,7 +1,6 @@
 
-
-vi:  Visual Interface    
-vim: Vi IMproved    
+vi:  Visual Interface -- by Bill Joy in 1976.    
+vim: Vi IMproved -- by Bram Moolenaar in 1991.    
 
 Help System
 ===
@@ -46,7 +45,7 @@ Examples
 
 macro
 ---
-录制宏，可使用25个字母，以字母q开始和结束录制    
+录制宏，可使用25个字母，以字母q开始和结束录制     
 qa 'action' q    
 使用宏    
 @a    
