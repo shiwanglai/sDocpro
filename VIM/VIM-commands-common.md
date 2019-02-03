@@ -3,12 +3,25 @@
 vi:  Visual Interface    
 vim: Vi IMproved    
 
+Help System
+===
 www.vim.org   
+
+Use the ":help" command to access the Vim's online doucumentation which kept up-to-date with the software and can answer almost any question about Vim's functionality.    
+
+The doc directory is in /usr/share/vim, e.g. /usr/share/vim/vim80/doc   
+A pdf file:   
+http://www.eandem.co.uk/mrw/vim/usr_doc/doc_a4c.pdf   
+
+The FAQ of vim is in the github below.   
+https://github.com/chrisbra/vim_faq/   
+
 Help:    
 normal mode下运行命令查看帮助，例如：    
 :help    
 :help index    
 :help usr_toc    
+:help tutor    
 
 Docs:    
 A Byte of Vim    
