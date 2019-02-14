@@ -1,7 +1,8 @@
 Documentation
 ==
-https://git-scm.com/docs
+https://git-scm.com/docs   
 
+https://github.com/git/git/tree/master/Documentation   
 
 git add
 ===
