@@ -53,6 +53,19 @@ set showmode
 " encoding   
 set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,latin1   
 
+info
+===
+example vimrc
+---
+/usr/share/vim/vim80/vimrc_example.vim   
+which include the default vimrc file   
+/usr/share/vim/vim80/defaults.vim   
+
+vimrc positoin
+---
+
+vim --version   
+
 open && close
 ===
 no
