@@ -10,6 +10,7 @@ list files and directories
 -t                         sort by time   
 -r, --reverse              reverse order while sorting   
 -h, --human-readable  print sizes in human readable format   
+-F, --classify             append indicator (one of */=>@|) to entries    
 
 Examples   
 ---
