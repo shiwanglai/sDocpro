@@ -123,6 +123,10 @@ $?
 ---
 the exit status of the most recently executed foreground pipeline   
 
+$!
+---
+the exit status of the most recently executed background pipeline   
+
 ${num}
 ---
 positional parameters beyond $9 using ${num}   
