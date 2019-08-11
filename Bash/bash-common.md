@@ -242,6 +242,32 @@ test命令可以判断3类条件：
 除test使用的标准数学运算符，允许将高级数学表达式放入比较中。   
 表达式里的>不需要转义。   
 
+extra example of string
+===
+code
+---
+#!/bin/bash   
+
+strbase="[audio]"    
+ 
+if [[ $strbase =~ "[" ]]; then    
+#if [[ $strbase = \\\[*\\\] ]]; then    
+#if [[ $strbase = \*audio\* ]]; then                                                                        
+    echo match    
+else    
+    echo mis-match    
+fi    
+
+input
+---
+./teststring.sh   
+
+output
+---
+match   
+
+
+
 ***
 
 an example for
