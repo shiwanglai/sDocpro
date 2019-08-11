@@ -248,11 +248,17 @@ code
 ---
 #!/bin/bash   
 
-strbase="[audio]"    
+strbase="[audio]"   
+strsub="\\\["    
+strego="\\\[*\\\]"    
+stregt="\*audio\*"    
  
 if [[ $strbase =~ "[" ]]; then    
+#if [[ $strbase =~ $strsub ]]; then    
 #if [[ $strbase = \\\[*\\\] ]]; then    
+#if [[ $strbase =~ $strego ]]; then    
 #if [[ $strbase = \*audio\* ]]; then                                                                        
+#if [[ $strbase =~ $stregt ]]; then    
     echo match    
 else    
     echo mis-match    
