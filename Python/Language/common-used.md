@@ -48,7 +48,7 @@ def funcname ([parameter_list]) : suite
 
 def func():   
 　　pass   
-
+func()    
 
 Class definitions
 ===
