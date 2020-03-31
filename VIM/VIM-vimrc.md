@@ -53,6 +53,18 @@ set showmode
 " encoding   
 set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,latin1   
 
+" esc quit   
+inoremap jj \<esc\>   
+
+" leader   
+let mapleader=","   
+
+"   
+" plugins vim-plug   
+"   
+call plug#begin()   
+call plug#end()   
+
 info
 ===
 example vimrc
