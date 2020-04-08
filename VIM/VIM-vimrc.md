@@ -59,10 +59,10 @@ inoremap jj \<esc\>
 " leader   
 let mapleader=","   
 
-"
-" runtime
-"
-runtime macros/matchit.vim
+"   
+" runtime   
+"   
+runtime macros/matchit.vim   
 
 "   
 " plugins vim-plug   
