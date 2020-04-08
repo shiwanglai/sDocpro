@@ -59,10 +59,17 @@ inoremap jj \<esc\>
 " leader   
 let mapleader=","   
 
+"
+" runtime
+"
+runtime macros/matchit.vim
+
 "   
 " plugins vim-plug   
 "   
 call plug#begin()   
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }   
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }   
 call plug#end()   
 
 info
