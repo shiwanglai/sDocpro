@@ -59,6 +59,21 @@ inoremap jj \<esc\>
 " leader   
 let mapleader=","   
 
+"  
+" statusline   
+"   
+set statusline=%1*\\%<%.50f\                   " show filename and path   
+set statusline+=%=%2*\\%y%m%r%h%w\ %*          " show file type and state   
+set statusline+=%3*\\%{&ff}\[%{&fenc}]\ %*     " file encoding   
+set statusline+=%4*\\ row:%l/%L,col:%c\ %*     " cursor position   
+set statusline+=%5*\\%3p%%\\%*                  " ratio   
+hi User1 cterm=none ctermfg=208   ctermbg=0   " User1 corresponding to %1*    
+hi User2 cterm=none ctermfg=25    ctermbg=0    
+hi User3 cterm=none ctermfg=169   ctermbg=0   
+hi User4 cterm=none ctermfg=green ctermbg=0   
+hi User5 cterm=none ctermfg=100   ctermbg=0   
+set laststatus=2   
+
 "   
 " runtime   
 "   
