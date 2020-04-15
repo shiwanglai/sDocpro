@@ -9,8 +9,9 @@ An Example
 " Use the ":help" command to find out more.   
 "   
     
-"colorscheme torte   
-   
+"colorscheme   
+runtime colors/desert.vim   
+
 " not comp with vi   
 set nocompatible   
     
@@ -21,13 +22,13 @@ syntax on
 set cursorline   
     
 " set style of cursor line    
-hi CursorLine   cterm=none ctermbg=DarkBlue ctermfg=White   
+"hi CursorLine   cterm=none ctermbg=DarkBlue ctermfg=White   
    
 "show cursor column   
 set cursorcolumn   
     
 " set style of cursor column   
-hi CursorColumn cterm=none ctermbg=DarkBlue ctermfg=White   
+"hi CursorColumn cterm=none ctermbg=DarkBlue ctermfg=White   
    
 "show number   
 set number   
