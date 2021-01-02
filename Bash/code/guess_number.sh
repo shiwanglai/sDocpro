@@ -16,7 +16,7 @@ while true; do
         echo Smaller!
     else
         echo Got it!! The number is $target !
-	break
+        break
     fi
 done
 

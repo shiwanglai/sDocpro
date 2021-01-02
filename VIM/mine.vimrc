@@ -49,6 +49,12 @@ set cindent
 " show current mode, INSERT or VISUAL
 set showmode
 
+" tab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 " encoding
 set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,latin1
 
